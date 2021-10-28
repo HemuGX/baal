@@ -58,6 +58,10 @@ request.end();
 
 })
 
+app.post("/contact" , function(req,res) {
+  res.sendFile(__dirname + "/contact")
+})
+
 
 app.listen(process.env.PORT,function () {
   console.log("server is running");
